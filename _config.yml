@@ -1,22 +1,16 @@
 # Site settings
-title: Blade Theme
-description: A simple Jekyll blog theme developed by Mateus Medeiros 
+title: Cooking with Cast Iron
+description: A short online course about cooking
 url: "http://mateussmedeiros.github.io/blade-theme/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
 author:
-  name     : Mateus Medeiros
-  bio      : Front End Developer passionate about new technologies. I am passionate about what I do and I try to learn more every day.
-  email    : mateus.sousamedeiros@gmail.com
-  twitter  : https://twitter.com/mateussousam
+  name     : Brett Haines
+  bio      : Masters degree student at Georgia Tech, investigating the effectiveness of online courses
+  email    : bhaines3@gatech.edu
 
 #SEO settings
 logo: /assets/img/img-blog.png/ # Site logo URL
-twitter_username: mateussousam # Twitter username
-facebook:
-    app_id: 1445035275808959 # App ID
-    publisher: https://www.facebook.com/mateus.sousamedeiros # URL of the Facebook page
-    admins: 100000229048939 # Facebook user ID that manages the page
 
 # Build settings
 permalink: /:title/
@@ -24,7 +18,7 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page/:num"
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
