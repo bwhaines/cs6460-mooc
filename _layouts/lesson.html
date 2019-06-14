@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="lesson">
+
+  <header class="lesson-header">
+    <h1 class="lesson-title" itemprop="name headline">Lesson {{ page.number }}</h1>
+    <h1 class="lesson-title" itemprop="name headline">{{ page.title }}</h1>
+    <hr>
+  </header>
+
+  <div class="lesson-content" itemprop="articleBody">
+    <iframe width="960" height="540" src={{ page.video_url }} frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {{ content }}
+  </div>
+
+</article>
