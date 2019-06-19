@@ -10,7 +10,7 @@ layout: default
   </header>
 
   <div class="lesson-content" itemprop="articleBody">
-    <iframe width="960" height="540" src={{ page.video_url }} frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="960" height="540" src={{ page.video_url }} frameborder="1" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
     {{ content }}
   </div>
 
@@ -21,5 +21,13 @@ layout: default
   <div class="next-lesson-b">
     <h2><a href="{{ page.next_link }}">Next Lesson</a></h2>
   </div>
+
+  <div class="debug-statement" id="user-id">
+    (User UUID) 
+  </div>
+
+  <script language="javascript">
+    document.getElementById("user-id").innerHTML = getUUID();
+  </script>
 
 </article>
