@@ -12,21 +12,30 @@ function testRecord()
 // Save lesson start time
 function recordLessonStart(lessonName)
 {
-    var tm = new Date().getTime();
-    var id = getUUID();
-    db.ref(id+'/'+lessonName+'/start').set({
-        time: tm
-    });
+    // Check if cookie already exists so we only record times once
+    if(getCookieValue(lessonName+"Start") == "")
+    {
+        var tm = new Date().getTime();
+        // Save time to Firebase database
+        db.ref(getUUID()+'/'+lessonName+'/start').set({
+            time: tm
+        });
+        // Also save it to cookie
+        setCookie(lessonName+"Start", tm);
+    }
 }
 
 // Save lesson end time
 function recordLessonEnd(lessonName)
 {
-    var tm = new Date().getTime();
-    var id = getUUID();
-    db.ref(id+'/'+lessonName+'/end').set({
-        time: tm
-    });
+    if(getCookieValue(lessonName+"End") == "")
+    {
+        var tm = new Date().getTime();
+        db.ref(getUUID()+'/'+lessonName+'/end').set({
+            time: tm
+        });
+        setCookie(lessonName+"End", tm);
+    }
 }
 
 // Save quiz results

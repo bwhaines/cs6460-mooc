@@ -3,6 +3,11 @@ layout: default
 ---
 <article class="lesson">
 
+  <script language="javascript">
+    recordLessonStart("{{ page.title }}");
+    window.onbeforeunload = recordLessonEnd("{{ page.title }}");
+  </script>
+
   <header class="lesson-header">
     <h1 class="lesson-title" itemprop="name headline">Lesson {{ page.number }}</h1>
     <h1 class="lesson-title" itemprop="name headline">{{ page.title }}</h1>
