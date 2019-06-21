@@ -9,7 +9,6 @@ layout: default
   </script>
 
   <header class="lesson-header">
-    <h1 class="lesson-title" itemprop="name headline">Lesson {{ page.number }}</h1>
     <h1 class="lesson-title" itemprop="name headline">{{ page.title }}</h1>
     <hr>
   </header>
@@ -20,19 +19,11 @@ layout: default
   </div>
 
   <div class="next-lesson-a">
-    <h2><a href="{{ page.next_link }}">Next Lesson</a></h2>
+    <h2><a href="{{ page.next_link_linear }}">Next Lesson</a></h2>
   </div>
 
   <div class="next-lesson-b">
-    <h2><a href="{{ page.next_link }}">Next Lesson</a></h2>
+    <h2><a href="{{ page.next_link_nonlin }}">Continue</a></h2>
   </div>
-
-  <div class="debug-statement" id="user-id">
-    (User UUID) 
-  </div>
-
-  <script language="javascript">
-    document.getElementById("user-id").innerHTML = getUUID();
-  </script>
 
 </article>
