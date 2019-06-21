@@ -1,0 +1,10 @@
+---
+layout: lesson
+title:  "Removing Rust"
+date:   2019-06-20 16:00:00 -0500
+description: Removing rust on your cast iron cookware
+video_url: "https://www.youtube-nocookie.com/embed/OCWj5xgu5Ng"
+permalink: /rust/
+next_link_linear: /mistakes/
+next_link_nonlin: /
+---
