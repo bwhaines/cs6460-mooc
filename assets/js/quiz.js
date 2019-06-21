@@ -2,82 +2,52 @@
 // https://www.sitepoint.com/simple-javascript-quiz/
 
 const quizContent = [
-{
-    question: "You can let cast iron pans soak overnight to clean them.",
-    answers: {
-    a: "True",
-    b: "False"
+    {
+        question: "You can let cast iron pans soak overnight to clean them.",
+        answers: {
+        a: "True",
+        b: "False"
+        },
+        correctAnswer: "b"
     },
-    correctAnswer: "b"
-},
-{
-    question: "Which of these would NOT made of cast iron?",
-    answers: {
-    a: "Dutch oven",
-    b: "Skillet",
-    c: "Ladle",
-    d: "Loaf pan"
+    {
+        question: "Which of these would NOT made of cast iron?",
+        answers: {
+        a: "Dutch oven",
+        b: "Skillet",
+        c: "Ladle",
+        d: "Loaf pan"
+        },
+        correctAnswer: "c"
     },
-    correctAnswer: "c"
-},
-{
-    question: "You can heat cast iron to temperatures over 400 degrees.",
-    answers: {
-    a: "True",
-    b: "False"
+    {
+        question: "You can heat cast iron to temperatures over 400 degrees.",
+        answers: {
+        a: "True",
+        b: "False"
+        },
+        correctAnswer: "a"
     },
-    correctAnswer: "a"
-},
-{
-    question: "When is it OK to use soap on cast iron?",
-    answers: {
-    a: "Immediately before cooking",
-    b: "When removing rust",
-    c: "Both A and B",
-    d: "Neither A or B"
+    {
+        question: "When is it OK to use soap on cast iron?",
+        answers: {
+        a: "Immediately before cooking",
+        b: "When removing rust",
+        c: "Both A and B",
+        d: "Neither A or B"
+        },
+        correctAnswer: "b"
     },
-    correctAnswer: "b"
-},
-{
-    question: "How long will cast iron last if it's well taken care of?",
-    answers: {
-    a: "1-3 years",
-    b: "3-5 years",
-    c: "5-10 years",
-    d: "More than 10 years"
-    },
-    correctAnswer: "d"
-},
-{
-    question: "",
-    answers: {
-    a: "",
-    b: "",
-    c: "",
-    d: ""
-    },
-    correctAnswer: ""
-},
-{
-    question: "",
-    answers: {
-    a: "",
-    b: "",
-    c: "",
-    d: ""
-    },
-    correctAnswer: ""
-},
-{
-    question: "",
-    answers: {
-    a: "",
-    b: "",
-    c: "",
-    d: ""
-    },
-    correctAnswer: ""
-}
+    {
+        question: "How long will cast iron last if it's well taken care of?",
+        answers: {
+        a: "1-3 years",
+        b: "3-5 years",
+        c: "5-10 years",
+        d: "More than 10 years"
+        },
+        correctAnswer: "d"
+    }
 ];
 
 const quizContainer = document.getElementById('quiz');
@@ -121,7 +91,7 @@ function showResults()
     let numCorrect = 0;
     let db = firebase.database();
 
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
+    quizContent.forEach( (currentQuestion, questionNumber) => {
 
         // Find selected answer
         const answerContainer = answerContainers[questionNumber];
@@ -132,23 +102,37 @@ function showResults()
         {
             db.ref(getUUID()+'/quiz/'+questionNumber).set({
                 response: userAnswer
-            })
+            });
+        }
+
+        var answerNumber = 0;
+        for(var currentAnswer in currentQuestion.answers) 
+        {
+            if(currentAnswer===currentQuestion.correctAnswer)
+            {
+                answerContainers[questionNumber].children[answerNumber].style.color = 'green';
+            }
+            else if(currentAnswer===userAnswer)
+            {
+                answerContainers[questionNumber].children[answerNumber].style.color = 'red';
+            }
+            answerNumber++;
         }
 
         if(userAnswer===currentQuestion.correctAnswer)
         {
             numCorrect++;
-            answerContainers[questionNumber].style.color = 'lightgreen';
-        }
-        else
-        {
-            answerContainers[questionNumber].style.color = 'red';
         }
     });
 
-    resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
+    resultsContainer.innerHTML = numCorrect + ' out of ' + quizContent.length;
 
-    setCookie("TakenQuiz", true);
+    if(getCookieValue("TakenQuiz")=="")
+    {
+        setCookie("TakenQuiz", true);
+        recordLessonEnd("Quiz");
+    }
 }
 
 submitButton.addEventListener('click', showResults);
+buildQuiz();
