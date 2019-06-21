@@ -1,0 +1,7 @@
+---
+layout: quiz
+title:  "Final Quiz"
+date:   2019-06-20 10:00:00 -0500
+description: Quiz covering all course material
+permalink: /quiz/
+---
