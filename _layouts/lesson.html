@@ -18,12 +18,14 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="next-lesson-a">
+  <div id="next-lesson-a">
     <h2><a href="{{ page.next_link_linear }}">Next Lesson</a></h2>
   </div>
 
-  <div class="next-lesson-b">
+  <div id="next-lesson-b">
     <h2><a href="{{ page.next_link_nonlin }}">Continue</a></h2>
   </div>
+
+  <script type="text/javascript">hideNextLesson()</script>
 
 </article>
