@@ -4,19 +4,11 @@ layout: default
 
 <div class="home">
 
-    <h1 class="page-title"> Lessons </h1>
+    <script type="text/javascript">getUUID()</script>
 
-    <ul class="post-list">
-      {% for post in site.posts limit:20 %}
-        <li class="post-container"> 
-        
-          <p> <a class="post-link" href="{{ post.permalink | prepend: site.baseurl }}">{{ post.title }}</a> — {{ post.content | strip_html | truncatewords: 40  }}</p>
+    <h1 class="page-title"> Course Home </h1>
 
-        </li>
-      {% endfor %}
-    </ul>
-
-    <div class="next-lesson">
+    <div id="next-lesson">
       <h2>Next lesson:</h2>
       <div class="course-btn" id="next-lesson-btn"></div>
     </div>
@@ -35,5 +27,5 @@ layout: default
       <div class="course-btn quiz-btn" onclick="window.location='/quiz/';">Final Quiz</div>
     </div>
 
-    <script type="text/javascript">//hideHomePage()</script>
+    <script type="text/javascript">hideHomePage()</script>
 </div>
