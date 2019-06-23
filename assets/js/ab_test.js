@@ -1,6 +1,7 @@
 function isControlGroup()
 {
-    return Number(getUUID()) % 2 == 0;
+    var num = parseInt(getUUID().substr(-1),16);
+    return (num % 2 == 0);
 }
 
 function hideNextLesson()
