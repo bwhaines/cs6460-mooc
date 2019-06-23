@@ -1,0 +1,36 @@
+.intro-btn { grid-area: intro; }
+.why-btn { grid-area: whyci; }
+.cooking-btn { grid-area: cookn; }
+.baking-btn { grid-area: bakng; }
+.seasoning-btn { grid-area: seasn; }
+.cleaning-btn { grid-area: clean; }
+.rust-btn { grid-area: rusty; }
+.chem-btn { grid-area: chemy; }
+.mistakes-btn { grid-area: mistk; }
+.conclusion-btn { grid-area: concl; }
+
+.course-btn {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #1e8bc3;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.course-map {
+  display: grid;
+  grid-template-areas:
+    '  .   intro   .  '
+    '  .   whyci   .  '
+    'cookn bakng seasn'
+    'clean rusty chemy'
+    '  .   mistk   .  '
+    '  .   concl   .  ';
+  grid-gap: 24px 48px;
+  background-color: #FFF;
+  padding: 10px;
+}

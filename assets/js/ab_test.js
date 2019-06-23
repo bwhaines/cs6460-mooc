@@ -20,5 +20,15 @@ function hideNextLesson()
 
 function hideHomePage()
 {
-    //TODO
+    var linear_home = document.getElementById("post-list");
+    var nonlin_home = document.getElementById("course-map");
+    
+    if(isControlGroup())
+    {
+        nonlin_home.style.display = "none";
+    }
+    else
+    {
+        linear_home.style.display = "none";
+    }
 }
