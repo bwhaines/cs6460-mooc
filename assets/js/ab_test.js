@@ -20,7 +20,7 @@ function hideNextLesson()
 
 function hideHomePage()
 {
-    var linear_home = document.getElementById("post-list");
+    var linear_home = document.getElementById("next-lesson");
     var nonlin_home = document.getElementById("course-map");
     
     if(isControlGroup())

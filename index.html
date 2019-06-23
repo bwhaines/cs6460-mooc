@@ -10,27 +10,29 @@ layout: default
       {% for post in site.posts limit:20 %}
         <li class="post-container"> 
         
-          <p> <a class="post-link" href="{{ post.permalink | prepend: site.baseurl }}">{{ post.title }}</a> — {{ post.content | strip_html | truncatewords: 40  }} <a href="{{ post.permalink | prepend: site.baseurl }}"> Watch lesson... </a> </p>
+          <p> <a class="post-link" href="{{ post.permalink | prepend: site.baseurl }}">{{ post.title }}</a> — {{ post.content | strip_html | truncatewords: 40  }}</p>
 
         </li>
       {% endfor %}
     </ul>
 
-    <div class="">
-      
+    <div class="next-lesson">
+      <h2>Next lesson:</h2>
+      <div class="course-btn" id="next-lesson-btn"></div>
     </div>
 
     <div class="course-map">
-      <div class="course-btn intro-btn">Introduction</div>
-      <div class="course-btn why-btn">Why Cast Iron?</div>
-      <div class="course-btn cooking-btn">Cooking</div>
-      <div class="course-btn baking-btn">Baking</div>
-      <div class="course-btn seasoning-btn">Seasoning</div>
-      <div class="course-btn cleaning-btn">Cleaning</div>
-      <div class="course-btn rust-btn">Removing Rust</div>
-      <div class="course-btn chem-btn">Chemistry</div>
-      <div class="course-btn mistakes-btn">Common Mistakes</div>
-      <div class="course-btn conclusion-btn">Conclusion</div>
+      <div class="course-btn intro-btn" onclick="window.location='/introduction/';">Introduction</div>
+      <div class="course-btn why-btn" onclick="window.location='/why_cast_iron/';">Why Cast Iron?</div>
+      <div class="course-btn cooking-btn" onclick="window.location='/cooking/';">Cooking</div>
+      <div class="course-btn baking-btn" onclick="window.location='/baking/';">Baking</div>
+      <div class="course-btn seasoning-btn" onclick="window.location='/seasoning/';">Seasoning</div>
+      <div class="course-btn cleaning-btn" onclick="window.location='/cleaning/';">Cleaning</div>
+      <div class="course-btn rust-btn" onclick="window.location='/rust/';">Removing Rust</div>
+      <div class="course-btn chem-btn" onclick="window.location='/chemistry/';">Chemistry</div>
+      <div class="course-btn mistakes-btn" onclick="window.location='/mistakes/';">Common Mistakes</div>
+      <div class="course-btn conclusion-btn" onclick="window.location='/conclusion/';">Conclusion</div>
+      <div class="course-btn quiz-btn" onclick="window.location='/quiz/';">Final Quiz</div>
     </div>
 
     <script type="text/javascript">//hideHomePage()</script>
