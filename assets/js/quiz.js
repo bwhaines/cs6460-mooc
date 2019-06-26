@@ -11,7 +11,7 @@ const quizContent = [
         correctAnswer: "b"
     },
     {
-        question: "Which of these would NOT made of cast iron?",
+        question: "Which of these would typically NOT made of cast iron?",
         answers: {
         a: "Dutch oven",
         b: "Skillet",
@@ -21,7 +21,7 @@ const quizContent = [
         correctAnswer: "c"
     },
     {
-        question: "You can heat cast iron to temperatures over 400 degrees.",
+        question: "You can heat cast iron to temperatures over 450 degrees.",
         answers: {
         a: "True",
         b: "False"
@@ -43,10 +43,46 @@ const quizContent = [
         answers: {
         a: "1-3 years",
         b: "3-5 years",
-        c: "5-10 years",
-        d: "More than 10 years"
+        c: "5-20 years",
+        d: "More than 20 years"
         },
         correctAnswer: "d"
+    },
+    {
+        question: "The \"seasoning\" is a layer of hardened oil on the cast iron.",
+        answers: {
+        a: "True",
+        b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        question: "When was cast iron first used for cooking?",
+        answers: {
+        a: "Early 1900s",
+        b: "Late 1400s",
+        c: "Mid 1500s",
+        d: "Over 1000 years ago"
+        },
+        correctAnswer: "d"
+    },
+    {
+        question: "What is the purpose of the seasoning layer?",
+        answers: {
+        a: "To create a non-stick surface",
+        b: "To protect against rust",
+        c: "Both A and B",
+        d: "Neither A or B"
+        },
+        correctAnswer: "c"
+    },
+    {
+        question: "Cast iron cookware should NEVER be put in an oven.",
+        answers: {
+        a: "True",
+        b: "False"
+        },
+        correctAnswer: "b"
     }
 ];
 
