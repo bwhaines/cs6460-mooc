@@ -33,7 +33,7 @@
     '  .   mistk   .  '
     '  .   concl   .  '
     '  .   fquiz   .  ';
-  grid-gap: 24px 72px;
-  background-color: #FFF;
+  grid-gap: 24px 92px;
+  background: rgba(255,255,255,0);
   padding: 10px;
 }
