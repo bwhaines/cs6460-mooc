@@ -35,64 +35,59 @@ function hideHomePage()
     }
 }
 
+function setLessonBtn(btn,label,link)
+{
+    btn.innerHTML = label;
+    btn.setAttributeNS(null,"onclick","window.location='/"+link+"/';");
+}
+
 function getNextLesson()
 {
     var next_btn = document.getElementById("next-lesson-btn");
 
     if(getCookieValue("Conclusion Start") != "")
     {
-        next_btn.innerHTML = "Final Quiz";
-        next_btn.onclick = "window.location='/quiz/';";
+        setLessonBtn(next_btn,"Final Quiz","quiz");
     }
     else if(getCookieValue("Common Mistakes Start") != "")
     {
-        next_btn.innerHTML = "Conclusion";
-        next_btn.onclick = "window.location='/conclusion/';";
+        setLessonBtn(next_btn,"Conclusion","conclusion");
     }
-    else if(getCookieValue("Chemistry Start") != "")
+    else if(getCookieValue("Chemistry of Soap Start") != "")
     {
-        next_btn.innerHTML = "Common Mistakes";
-        next_btn.onclick = "window.location='/mistakes/';";
+        setLessonBtn(next_btn,"Common Mistakes","mistakes");
     }
-    else if(getCookieValue("Rust Start") != "")
+    else if(getCookieValue("Removing Rust Start") != "")
     {
-        next_btn.innerHTML = "Chemistry";
-        next_btn.onclick = "window.location='/chemistry/';";
+        setLessonBtn(next_btn,"Chemistry","chemistry");
     }
     else if(getCookieValue("Seasoning Start") != "")
     {
-        next_btn.innerHTML = "Removing Rust";
-        next_btn.onclick = "window.location='/rust/';";
+        setLessonBtn(next_btn,"Removing Rust","rust");
     }
     else if(getCookieValue("Cleaning Start") != "")
     {
-        next_btn.innerHTML = "Seasoning";
-        next_btn.onclick = "window.location='/Seasoning/';";
+        setLessonBtn(next_btn,"Seasoning","seasoning");
     }
     else if(getCookieValue("Baking Start") != "")
     {
-        next_btn.innerHTML = "Cleaning";
-        next_btn.onclick = "window.location='/cleaning/';";
+        setLessonBtn(next_btn,"Cleaning","cleaning");
     }
     else if(getCookieValue("Cooking Start") != "")
     {
-        next_btn.innerHTML = "Baking";
-        next_btn.onclick = "window.location='/baking/';";
+        setLessonBtn(next_btn,"Baking","baking");
     }
     else if(getCookieValue("Why Cast Iron Start") != "")
     {
-        next_btn.innerHTML = "Cooking";
-        next_btn.onclick = "window.location='/cooking/';";
+        setLessonBtn(next_btn,"Cooking","cooking");
     }
     else if(getCookieValue("Introduction Start") != "")
     {
-        next_btn.innerHTML = "Why Cast Iron?";
-        next_btn.onclick = "window.location='/why_cast_iron/';";
+        setLessonBtn(next_btn,"Why Cast Iron?","why_cast_iron");
     }
     else
     {
-        next_btn.innerHTML = "Introduction";
-        next_btn.onclick = "window.location='/intro/';";
+        setLessonBtn(next_btn,"Introduction","introduction");
     }
 }
 
