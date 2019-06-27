@@ -95,3 +95,67 @@ function getNextLesson()
         next_btn.onclick = "window.location='/intro/';";
     }
 }
+
+// Line-drawing functions
+// Adapted from https://www.beyondjava.net/how-to-connect-html-elements-with-an-arrow-using-svg
+
+function findAbsolutePosition(htmlElement) 
+{
+    var x = htmlElement.offsetLeft;
+    var y = htmlElement.offsetTop;
+    for (var x=0, y=0, el=htmlElement; el != null; el = el.offsetParent) 
+        {x += el.offsetLeft;y += el.offsetTop;}
+    return {"x":x,"y":y};
+}
+
+function drawLine(x1, y1, w, h)
+{
+    var svg = document.createElementNS("http://www.w3.org/2000/svg","svg");
+    var shape = document.createElementNS("http://www.w3.org/2000/svg","path");
+    var path = "M "+x1+" "+y1+" L "+w+" "+h;
+
+    shape.setAttributeNS(null,"d",path);
+    shape.setAttributeNS(null,"fill","none");
+    shape.setAttributeNS(null,"stroke","black");
+    svg.appendChild(shape);
+    svg.setAttributeNS(null,"class","line");
+    document.getElementById("map-lines").appendChild(svg);
+}
+
+function connectDivs(leftId, rightId) 
+{
+    var left = document.getElementById(leftId);
+    var right = document.getElementById(rightId);
+
+    var leftPos = findAbsolutePosition(left);
+    var x1 = leftPos.x;
+    var y1 = leftPos.y;
+    x1 += left.offsetWidth;
+    y1 += (left.offsetHeight / 2);
+
+    var rightPos = findAbsolutePosition(right);
+    var x2 = rightPos.x;
+    var y2 = rightPos.y;
+    y2 += (right.offsetHeight / 2);
+
+    var width = x2-x1;
+    var height = y2-y1;
+
+    drawLine(x1, y1, width, height);
+}
+
+function drawLines()
+{
+    connectDivs("intro-btn","why-btn");
+    connectDivs("why-btn","cooking-btn");
+    connectDivs("why-btn","baking-btn");
+    connectDivs("why-btn","seasoning-btn");
+    connectDivs("cooking-btn","cleaning-btn");
+    connectDivs("baking-btn","cleaning-btn");
+    connectDivs("seasoning-btn","rust-btn");
+    connectDivs("seasoning-btn","chem-btn");
+    connectDivs("cleaning-btn","mistakes-btn");
+    connectDivs("rust-btn","mistakes-btn");
+    connectDivs("mistakes-btn","concl-btn");
+    connectDivs("concl-btn","quiz-btn");
+}
