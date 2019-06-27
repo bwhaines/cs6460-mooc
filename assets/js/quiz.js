@@ -89,6 +89,7 @@ const quizContent = [
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+const finishButton = document.getElementById('finish');
 
 function buildQuiz()
 {
@@ -161,6 +162,7 @@ function showResults()
         }
     });
 
+    finishButton.style.display="inline";
     resultsContainer.innerHTML = numCorrect + ' out of ' + quizContent.length;
 
     if(getCookieValue("TakenQuiz")=="")
