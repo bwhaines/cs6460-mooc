@@ -6,7 +6,7 @@ description: You've completed the course!
 permalink: /congratulations/
 ---
 
-#Congratulations!
+# Congratulations!
 
 You've just finished the mini-course on cooking with cast iron.  I hope you've learned a lot and will put that knowledge to good use soon!
 
