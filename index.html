@@ -4,7 +4,15 @@ layout: default
 
 <div class="home">
 
-    <script type="text/javascript">getUUID()</script>
+  <div id="intro-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-btn" class="close">&times;</span>
+      <h2>Welcome to Cooking with Cast Iron!</h2>
+      <p>Before we begin, you should know this course is an experiment in online learning designed to help educators understand the effectiveness of web-based classes.  As such, some basic anonymous data will be collected, such as when you start and stop lessons and how well you do on the final quiz.  Additionally, some cookies will be stored to your device.  By continuing, you agree to take part in this experiment.</p>
+    </div>
+  </div>
+
+    <script type="text/javascript">checkModal();</script>
 
     <h1 class="page-title"> Course Home </h1>
 

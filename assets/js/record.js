@@ -38,3 +38,20 @@ function getUUID()
     }
     return uuid;
 }
+
+// Show the main page modal if the user doesn't have an ID yet
+function checkModal()
+{
+    if(getCookieValue("uuid")=="")
+    {
+        var modal = document.getElementById("intro-modal");
+        var closeBtn = document.getElementById("close-btn");
+
+        modal.style.display = "block";
+        closeBtn.onclick = function()
+        {
+            modal.style.display = "none";
+        }
+    }
+    setCookie("uuid",b());
+}
