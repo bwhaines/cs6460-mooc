@@ -1,16 +1,13 @@
 # Site settings
 title: Cooking with Cast Iron
 description: A short online course about cooking
-url: "http://mateussmedeiros.github.io/blade-theme/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cooking-mooc.firebaseapp.com/"
 
 # Author settings
 author:
   name     : Brett Haines
   bio      : Masters degree student at Georgia Tech, investigating the effectiveness of online courses
   email    : bhaines3@gatech.edu
-
-#SEO settings
-logo: /assets/img/img-blog.png/ # Site logo URL
 
 # Build settings
 permalink: /:title/
