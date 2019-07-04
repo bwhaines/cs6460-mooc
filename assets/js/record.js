@@ -48,10 +48,6 @@ function checkModal()
         var closeBtn = document.getElementById("close-btn");
 
         modal.style.display = "block";
-        closeBtn.onclick = function()
-        {
-            modal.style.display = "none";
-        }
+        closeBtn.onclick = function() { modal.style.display = "none"; }
     }
-    setCookie("uuid",b());
 }
