@@ -1,14 +1,5 @@
 var db = firebase.database();
 
-function testRecord()
-{
-    var id = b();
-    var tm = new Date().getTime();
-    db.ref('testing/'+id).set({
-        time: tm
-    });
-}
-
 // Save lesson start time
 function recordLessonStart(lessonName)
 {
@@ -36,10 +27,4 @@ function recordLessonEnd(lessonName)
         });
         setCookie(lessonName+" End", tm);
     }
-}
-
-// Save quiz results
-function recordQuizAnswers(responseList)
-{
-    // TODO
 }
