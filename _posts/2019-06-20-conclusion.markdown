@@ -6,5 +6,4 @@ description: Concluding the cast iron lesson series
 video_url: "https://www.youtube-nocookie.com/embed/Bfo48wxMmFc"
 permalink: /conclusion/
 next_link_linear: /quiz/
-next_link_nonlin: /quiz/
 ---

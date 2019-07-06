@@ -6,5 +6,4 @@ description: Cleaning your cast iron cookware
 video_url: "https://www.youtube-nocookie.com/embed/u05qPmrYjXI"
 permalink: /cleaning/
 next_link_linear: /seasoning/
-next_link_nonlin: /
 ---

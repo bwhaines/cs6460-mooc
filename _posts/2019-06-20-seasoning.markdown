@@ -6,5 +6,4 @@ description: Restoring the seasoning on your cast iron cookware
 video_url: "https://www.youtube-nocookie.com/embed/UuJhF592Y4Y"
 permalink: /seasoning/
 next_link_linear: /chemistry/
-next_link_nonlin: /
 ---

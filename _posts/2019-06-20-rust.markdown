@@ -6,5 +6,4 @@ description: Removing rust on your cast iron cookware
 video_url: "https://www.youtube-nocookie.com/embed/HUKHJGCHisI"
 permalink: /rust/
 next_link_linear: /mistakes/
-next_link_nonlin: /
 ---
