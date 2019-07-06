@@ -1,17 +1,10 @@
 ---
-layout: default
+layout: post
 title:  "Congratulations!"
 date:   2019-06-19 21:00:00 -0500
 description: You've completed the course!
 permalink: /congratulations/
 ---
-
-# Congratulations!
-
 You've just finished the mini-course on cooking with cast iron.  I hope you've learned a lot and will put that knowledge to good use soon!
 
 If you have time, I would greatly appreciate you taking a short survey about your experience with the course.  It's completely optional and should take less than 5 minutes.
-
-[Course Survey][survey]
-
-[survey]: https://forms.gle/ubZgQD8ts5Fe8EAf9

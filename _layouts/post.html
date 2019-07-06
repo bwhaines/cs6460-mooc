@@ -1,22 +1,17 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b, %Y" }}</time>
-    <hr>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  {% include share.html %}
-
-  {% include author.html %}
-
-  {% include comments.html %}
+  <a id="survey-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeCipxb2tW-OEKtzKP531gJP67zDoDk0E4ntccYvEFFHTZbSQ/viewform?usp=pp_url&entry.106176814=">Course Survey</a>
+  <script type="text/javascript">document.getElementById("survey-link").href+=getUUID();</script>
 
 </article>
