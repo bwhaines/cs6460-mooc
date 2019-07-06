@@ -15,16 +15,3 @@ function recordLessonStart(lessonName)
         setCookie(lessonName+" Start", tm);
     }
 }
-
-// Save lesson end time
-function recordLessonEnd(lessonName)
-{
-    if(getCookieValue(lessonName+" End") == "")
-    {
-        var tm = new Date().getTime();
-        db.ref(getUUID()+'/'+lessonName+'/end').set({
-            time: tm
-        });
-        setCookie(lessonName+" End", tm);
-    }
-}
