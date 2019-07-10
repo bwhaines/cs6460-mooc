@@ -22,11 +22,13 @@ LESSON_COMP_TEMPLATE = {
 def isControlGroup(uuid):
     return int(uuid[-1],16)%2 == 0
 
-def calculateLessonCompletion(data_dict, lesson_dict):
+def calculateLessonCompletion(data_dict):
+    lesson_dict = deepcopy(LESSON_COMP_TEMPLATE)
     for uuid in data_dict.keys():
         for lesson_name in LESSON_COMP_TEMPLATE:
             if lesson_name in data_dict[uuid]:
                 lesson_dict[lesson_name] += 1
+    return lesson_dict
 
 def calculateQuizScores(data_dict):
     score_list = []
@@ -64,17 +66,9 @@ if __name__ == "__main__":
     print("Experiment group size: %d \n" % len(expr_data))
 
     # Next, get completion rate for each lesson
-    lesson_comp_all = deepcopy(LESSON_COMP_TEMPLATE)
-    calculateLessonCompletion(data, lesson_comp_all)
-    print(str(lesson_comp_all))
-
-    lesson_comp_ctrl = deepcopy(LESSON_COMP_TEMPLATE)
-    calculateLessonCompletion(ctrl_data, lesson_comp_ctrl)
-    print(str(lesson_comp_ctrl))
-
-    lesson_comp_expr = deepcopy(LESSON_COMP_TEMPLATE)
-    calculateLessonCompletion(expr_data, lesson_comp_expr)
-    print(str(lesson_comp_expr) + "\n")
+    print(str(calculateLessonCompletion(data)))
+    print(str(calculateLessonCompletion(ctrl_data)))
+    print(str(calculateLessonCompletion(expr_data)) + "\n")
 
     # Now calculate the quiz scores
     all_scores = calculateQuizScores(data)
