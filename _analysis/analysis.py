@@ -73,15 +73,15 @@ if __name__ == "__main__":
     # Now calculate the quiz scores
     all_scores = calculateQuizScores(data)
     print("Total quiz completions: %d" % len(all_scores))
-    print("Average score: %d" % mean(all_scores))
+    print("Average score: %f" % mean(all_scores))
     print("Standard deviation: %f\n" % stdev(all_scores))
 
     ctrl_scores = calculateQuizScores(ctrl_data)
     print("Control group quiz completions: %d" % len(ctrl_scores))
-    print("Average score: %d" % mean(ctrl_scores))
+    print("Average score: %f" % mean(ctrl_scores))
     print("Standard deviation: %f\n" % stdev(ctrl_scores))
 
     expr_scores = calculateQuizScores(expr_data)
     print("Experiment group quiz completions: %d" % len(expr_scores))
-    print("Average score: %d" % mean(expr_scores))
+    print("Average score: %f" % mean(expr_scores))
     print("Standard deviation: %f\n" % stdev(expr_scores))
