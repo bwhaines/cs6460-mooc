@@ -1,4 +1,16 @@
 {
+  "00dfb5ff-da10-4c44-a4cb-24c124501bf5" : {
+    "Introduction" : {
+      "start" : {
+        "time" : 1562712631816
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562712648956
+      }
+    }
+  },
   "01ebad6f-77b9-4abb-9b01-fa60898617e7" : {
     "Why Cast Iron" : {
       "start" : {
@@ -453,6 +465,13 @@
     "Seasoning" : {
       "start" : {
         "time" : 1562649850687
+      }
+    }
+  },
+  "295f3c31-bf18-40f1-9b50-737bad534ad0" : {
+    "Introduction" : {
+      "start" : {
+        "time" : 1562724282405
       }
     }
   },
@@ -1165,6 +1184,82 @@
       }
     }
   },
+  "6f3dab4f-82a1-4674-913f-ca6e77db3abc" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562721694190
+      }
+    },
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562721948611
+      }
+    },
+    "Cleaning" : {
+      "start" : {
+        "time" : 1562721766742
+      }
+    },
+    "Common Mistakes" : {
+      "start" : {
+        "time" : 1562722034136
+      }
+    },
+    "Conclusion" : {
+      "start" : {
+        "time" : 1562722089083
+      }
+    },
+    "Cooking" : {
+      "start" : {
+        "time" : 1562721604319
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562722096649
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562721528847
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562721991108
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562721853260
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562721552262
+      }
+    },
+    "quiz" : [ {
+      "response" : "b"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "b"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
+  },
   "701dc51d-fd9b-45aa-b39b-ed448daf52fe" : {
     "Introduction" : {
       "start" : {
@@ -1219,6 +1314,23 @@
     "Introduction" : {
       "start" : {
         "time" : 1562627307140
+      }
+    }
+  },
+  "72524e89-0c88-4625-811c-7b263a622d58" : {
+    "Cooking" : {
+      "start" : {
+        "time" : 1562717275590
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562717269023
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562717272599
       }
     }
   },
@@ -1318,9 +1430,24 @@
     } ]
   },
   "790453da-b2e7-4c8a-b51d-3a380ff4d3ff" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562719778747
+      }
+    },
     "Cleaning" : {
       "start" : {
         "time" : 1562635988258
+      }
+    },
+    "Common Mistakes" : {
+      "start" : {
+        "time" : 1562719862932
+      }
+    },
+    "Conclusion" : {
+      "start" : {
+        "time" : 1562719499199
       }
     },
     "Cooking" : {
@@ -1328,11 +1455,40 @@
         "time" : 1562635981637
       }
     },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562719505776
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562719493603
+      }
+    },
     "Seasoning" : {
       "start" : {
         "time" : 1562636055697
       }
-    }
+    },
+    "quiz" : [ {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
   },
   "7e9dcd3d-05c7-4873-b9a4-1c42b23e231f" : {
     "Chemistry of Soap" : {
@@ -1369,6 +1525,72 @@
         "time" : 1562629530314
       }
     }
+  },
+  "82d00218-e8ce-4b0d-b07e-a0aae4cad5e7" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562723830106
+      }
+    },
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562724194364
+      }
+    },
+    "Cleaning" : {
+      "start" : {
+        "time" : 1562724032062
+      }
+    },
+    "Cooking" : {
+      "start" : {
+        "time" : 1562723733099
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562724225109
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562723629604
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562724144498
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562723913231
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562723664594
+      }
+    },
+    "quiz" : [ {
+      "response" : "b"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "b"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
   },
   "839dbc14-eeb0-4a36-8142-a0d33384f393" : {
     "Introduction" : {
@@ -1525,6 +1747,52 @@
       }
     }
   },
+  "9a90fe73-b657-4d41-999e-66ce49cf2cbf" : {
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562726078615
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562726240198
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562725953398
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562726132811
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562725997975
+      }
+    },
+    "quiz" : [ {
+      "response" : "a"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
+  },
   "9b4ce132-d89c-48ef-a86e-b3cad3cc8030" : {
     "Introduction" : {
       "start" : {
@@ -1551,10 +1819,98 @@
       }
     }
   },
+  "a08fa747-7c2e-4e1c-b1fd-54b645ae8417" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562711438131
+      }
+    },
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562711828831
+      }
+    },
+    "Cleaning" : {
+      "start" : {
+        "time" : 1562711655440
+      }
+    },
+    "Common Mistakes" : {
+      "start" : {
+        "time" : 1562711890235
+      }
+    },
+    "Conclusion" : {
+      "start" : {
+        "time" : 1562711963832
+      }
+    },
+    "Cooking" : {
+      "start" : {
+        "time" : 1562711333687
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562711978450
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562711217603
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562711768252
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562711530009
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562711250235
+      }
+    },
+    "quiz" : [ {
+      "response" : "b"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "b"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
+  },
   "a2124304-595c-48c1-89f0-9853d3519824" : {
     "Introduction" : {
       "start" : {
         "time" : 1562688380218
+      }
+    }
+  },
+  "a33fbc20-0db2-4387-a53b-de98b9502e79" : {
+    "Cooking" : {
+      "start" : {
+        "time" : 1562716627221
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562716603945
       }
     }
   },
@@ -2114,6 +2470,82 @@
       }
     }
   },
+  "c8d161d3-2ee4-4d5e-b9eb-6b04329507f8" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562727299638
+      }
+    },
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562727304754
+      }
+    },
+    "Cleaning" : {
+      "start" : {
+        "time" : 1562727302114
+      }
+    },
+    "Common Mistakes" : {
+      "start" : {
+        "time" : 1562727308116
+      }
+    },
+    "Conclusion" : {
+      "start" : {
+        "time" : 1562727310307
+      }
+    },
+    "Cooking" : {
+      "start" : {
+        "time" : 1562727043164
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562727312139
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562726615778
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562727306192
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562727303520
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562726924105
+      }
+    },
+    "quiz" : [ {
+      "response" : "a"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "b"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "b"
+    } ]
+  },
   "ca5c093f-9c7c-422d-9196-7b8aef032953" : {
     "Introduction" : {
       "start" : {
@@ -2170,6 +2602,23 @@
       }
     }
   },
+  "dc795c8a-099c-4c9a-8e0f-1a7b3e0569ea" : {
+    "Cooking" : {
+      "start" : {
+        "time" : 1562721789884
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562721772564
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562721782424
+      }
+    }
+  },
   "dcf0a1ed-1669-4074-b8d0-c9ef25d85a94" : {
     "Introduction" : {
       "start" : {
@@ -2183,6 +2632,82 @@
         "time" : 1562639448789
       }
     }
+  },
+  "f1494c3f-ad8b-46e4-bb5b-4cdd72497566" : {
+    "Baking" : {
+      "start" : {
+        "time" : 1562727536732
+      }
+    },
+    "Chemistry of Soap" : {
+      "start" : {
+        "time" : 1562727540188
+      }
+    },
+    "Cleaning" : {
+      "start" : {
+        "time" : 1562727537790
+      }
+    },
+    "Common Mistakes" : {
+      "start" : {
+        "time" : 1562727542920
+      }
+    },
+    "Conclusion" : {
+      "start" : {
+        "time" : 1562727544321
+      }
+    },
+    "Cooking" : {
+      "start" : {
+        "time" : 1562727535597
+      }
+    },
+    "Final Quiz" : {
+      "start" : {
+        "time" : 1562727545895
+      }
+    },
+    "Introduction" : {
+      "start" : {
+        "time" : 1562727512925
+      }
+    },
+    "Removing Rust" : {
+      "start" : {
+        "time" : 1562727541575
+      }
+    },
+    "Seasoning" : {
+      "start" : {
+        "time" : 1562727538930
+      }
+    },
+    "Why Cast Iron" : {
+      "start" : {
+        "time" : 1562727534446
+      }
+    },
+    "quiz" : [ {
+      "response" : "b"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "c"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "d"
+    }, {
+      "response" : "a"
+    }, {
+      "response" : "b"
+    } ]
   },
   "f1e8c3cf-37a6-4674-b172-a6154d8e1251" : {
     "Introduction" : {
