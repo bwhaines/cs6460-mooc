@@ -2,6 +2,8 @@
 
 import json
 from copy import deepcopy
+from statistics import mean
+from statistics import stdev
 
 LESSON_COMP_TEMPLATE = {
     "Introduction":0,
@@ -26,6 +28,24 @@ def calculateLessonCompletion(data_dict, lesson_dict):
             if lesson_name in data_dict[uuid]:
                 lesson_dict[lesson_name] += 1
 
+def calculateQuizScores(data_dict):
+    score_list = []
+    for uuid in data_dict.keys():
+        if "quiz" in data_dict[uuid]:
+            ans = data_dict[uuid]["quiz"]
+            correct = 0
+            if ans[0]["response"] == "b": correct += 1
+            if ans[1]["response"] == "c": correct += 1
+            if ans[2]["response"] == "a": correct += 1
+            if ans[3]["response"] == "b": correct += 1
+            if ans[4]["response"] == "d": correct += 1
+            if ans[5]["response"] == "a": correct += 1
+            if ans[6]["response"] == "d": correct += 1
+            if ans[7]["response"] == "c": correct += 1
+            if ans[8]["response"] == "b": correct += 1
+            score_list.append(correct)
+    return score_list
+
 if __name__ == "__main__":
 
     # First, import data and divide it into control and experiment groups
@@ -46,12 +66,28 @@ if __name__ == "__main__":
     # Next, get completion rate for each lesson
     lesson_comp_all = deepcopy(LESSON_COMP_TEMPLATE)
     calculateLessonCompletion(data, lesson_comp_all)
-    print(str(lesson_comp_all) + "\n")
+    print(str(lesson_comp_all))
 
     lesson_comp_ctrl = deepcopy(LESSON_COMP_TEMPLATE)
     calculateLessonCompletion(ctrl_data, lesson_comp_ctrl)
-    print(str(lesson_comp_ctrl) + "\n")
+    print(str(lesson_comp_ctrl))
 
     lesson_comp_expr = deepcopy(LESSON_COMP_TEMPLATE)
     calculateLessonCompletion(expr_data, lesson_comp_expr)
     print(str(lesson_comp_expr) + "\n")
+
+    # Now calculate the quiz scores
+    all_scores = calculateQuizScores(data)
+    print("Total quiz completions: %d" % len(all_scores))
+    print("Average score: %d" % mean(all_scores))
+    print("Standard deviation: %f\n" % stdev(all_scores))
+
+    ctrl_scores = calculateQuizScores(ctrl_data)
+    print("Control group quiz completions: %d" % len(ctrl_scores))
+    print("Average score: %d" % mean(ctrl_scores))
+    print("Standard deviation: %f\n" % stdev(ctrl_scores))
+
+    expr_scores = calculateQuizScores(expr_data)
+    print("Experiment group quiz completions: %d" % len(expr_scores))
+    print("Average score: %d" % mean(expr_scores))
+    print("Standard deviation: %f\n" % stdev(expr_scores))
