@@ -1,6 +1,7 @@
 #!/bin/python
 
 import json
+import matplotlib.pyplot
 from copy import deepcopy
 from statistics import mean
 from statistics import stdev
@@ -48,6 +49,13 @@ def calculateQuizScores(data_dict):
             score_list.append(correct)
     return score_list
 
+def plotLessonViews(data_dict, title):
+    n = range(len(data_dict))
+    matplotlib.pyplot.bar(n, list(data_dict.values()))
+    matplotlib.pyplot.xticks(n, list(data_dict.keys()))
+    matplotlib.pyplot.title(title)
+    matplotlib.pyplot.show()
+
 if __name__ == "__main__":
 
     # First, import data and divide it into control and experiment groups
@@ -66,9 +74,12 @@ if __name__ == "__main__":
     print("Experiment group size: %d \n" % len(expr_data))
 
     # Next, get completion rate for each lesson
-    print(str(calculateLessonCompletion(data)))
-    print(str(calculateLessonCompletion(ctrl_data)))
-    print(str(calculateLessonCompletion(expr_data)) + "\n")
+    lesson_comp_all = calculateLessonCompletion(data)
+    print(str(lesson_comp_all))
+    lesson_comp_ctrl = calculateLessonCompletion(ctrl_data)
+    print(str(lesson_comp_ctrl))
+    lesson_comp_expr = calculateLessonCompletion(expr_data)
+    print(str(lesson_comp_expr) + "\n")
 
     # Now calculate the quiz scores
     all_scores = calculateQuizScores(data)
@@ -85,3 +96,8 @@ if __name__ == "__main__":
     print("Experiment group quiz completions: %d" % len(expr_scores))
     print("Average score: %f" % mean(expr_scores))
     print("Standard deviation: %f\n" % stdev(expr_scores))
+
+    # Display some plots
+    plotLessonViews(lesson_comp_all, "Lesson Views")
+    plotLessonViews(lesson_comp_ctrl, "Lesson Views (Control Group)")
+    plotLessonViews(lesson_comp_expr, "Lesson Views (Experiment Group)")
